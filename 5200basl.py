@@ -152,6 +152,7 @@ def main(args):
            DEBUG = True
            args = args.replace("*", "")
 
+    args = args.strip(" “)
     # Show help if no arguments, and exit
     if (0 == len(args)):
       print ("Usage: 5200BAS [/16] [/D] [/M] file[.bas][*]")
@@ -2410,7 +2411,7 @@ def INCLUDEASM(includeName):
 
     # "local" function definition (parent = INCLUDES())
     def INCLUDEFILE(fileName):
-        fileName = "INC\\" + fileName + ".INC"
+        fileName = "INC/" + fileName + ".INC"
         if (DEBUG):
             print("Including file " + fileName)
         file = open(fileName, 'r')
