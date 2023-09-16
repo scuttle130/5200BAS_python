@@ -40,9 +40,9 @@ If compilation is successfuly, you will get an output .asm file (an 2 include fi
 
 Use DASM to compile the .ASM to a binary:
 
-DASM filename.asm -f3
+DASM filename.asm -f3 -ofilename.bin
 
-(-f3 option specifies that we want Atari 8-bit).
+(-f3 option specifies that we want Atari 8-bit). (-o .bin creates the binary).
 
 At this point, if there are no errors, you should have a file "a.out". Rename this to .bin and run in your favourite emulator (which should be Jum52).
 
